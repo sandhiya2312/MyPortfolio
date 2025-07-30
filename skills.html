@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, rgb(255, 255, 255), rgb(254, 215, 173));
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    h1 {
+      margin-top: 20px;
+    }
+
+    #skills-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      width: 200px;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      color: white;
+      font-weight: bold;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 60px;
+      height: 60px;
+      z-index: 1;
+    }
+
+
+    .html {
+      background-color: #f67d5f;
+    }
+
+    .css {
+      background-color: #5e7bef;
+    }
+
+    .javascript {
+      background-color: #f7df1e;
+      color: black;
+    }
+
+    .java {
+      background-color: #007396;
+    }
+
+    .c {
+      background-color: #a8b9cc;
+      color: black;
+    }
+
+    .UI {
+      background-color: #ffffff;
+      color: rgb(3, 2, 2);
+    }
+  </style>
+</head>
+
+<body>
+  <h1 style="position: absolute;top: 1%;left: 45%;">
+    <center><b>SKILLS</b></center>
+  </h1>
+  <h1 style="position: absolute;top: 10%;left: 35%;font-family: 'Times New Roman', Times, serif;">
+    <center><b>PROGRAMMING LANGUAGES</b></center>
+  </h1>
+
+  <div id="skills-container">
+    <div class="card html">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML Logo">
+
+      HTML
+    </div>
+    <div class="card css">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS Logo">
+      CSS
+    </div>
+    <div class="card javascript">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo">
+      JavaScript
+    </div>
+    <div class="card java">
+      <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" alt="Java Logo">
+      Java
+    </div>
+    <div class="card c">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg" alt="C Logo">
+      C
+    </div>
+    <div class="card UI">
+      <img src="ui logo.png" alt="ui and ux Logo">
+      Ui & Ux Design
+    </div>
+  </div>
+</body>
+
+</html>
