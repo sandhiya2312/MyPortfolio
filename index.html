@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>pradeep</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head> 
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="About .html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="skills.html">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="project.html">Project</a></div>
+
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="certificates.html">Certificate</a></div>
+                
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="project.html">Project</a>
+                <a href="certification.html">Certificate</a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=717822p240@kce.ac.in" 
+       class="contact-button" >Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+        <section>
+            <div class="main-container">
+                <div class="image">
+                    <img src="sandy.jpeg" style="position: absolute; height: 60%; width: 25%;top: 30%;left:190px;opacity: 70%;border-radius: 40%;" >
+                </div>
+                
+                
+                <div class="content">
+                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>SANDHIYA S</span></h1>
+                    <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a <span></span></div>
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">"I'm a skilled frontend and backend developer with a strong passion for coding.
+                         I excel in creating responsive, user-friendly designs and robust backend systems. 
+                         Dedicated to delivering efficient and innovative solutions, I constantly strive to elevate user experiences."</p>
+                    <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                        <a href="https://github.com/sandhiya2312" ><i class="fa-brands fa-github"></i></a>
+                        <a href="http://geeksforgeeks.org/user/sandhiyasenthilkumar/"><i class="fas fa-external-link-alt"></i> </a>
+                        <a href="https://www.linkedin.com/in/sandhiya-s-4b509626a"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://leetcode.com/u/sankarthick127/"><i class="fa-brands fa-leanpub"></i></a> 
+
+                    </div>
+                    <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                      <button> <a href="resume.html">Download CV</button>                       
+                </div>
+            </div>
+        </section>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({offset:0});
+        </script>
+        <script>
+            function hamburg(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(0px)"
+            }
+            function cancel(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+        </script>
+</body>
+</html>
