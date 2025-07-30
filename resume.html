@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .dv{
+    width: 10%;
+    height: 4vh;
+    background-color: rgb(109,67, 0);
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 70%;
+    font-weight: 500px;
+    border-radius: 10px;
+    transition: 0.2s linear;
+    position: absolute;
+    top: 4%;
+    left: 60%;
+}
+.dv:hover{
+ scale: 1.1;
+ color: rgb(109,67, 0);
+ border: 2px solid rgb(109,67, 0);
+ background-color: transparent;
+ font-weight: 700;
+ box-shadow: 0 0 40px rgb(109,67, 0);
+}
+    </style>
+   
+</head>
+<body style="background: linear-gradient(to right, rgb(255,255,255), rgb(254,215,173));">
+    <h1 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><center> Downlode Resume </center></h1>
+    
+    <h1 style="background: linear-gradient(to right, rgb(255,255,255), rgb(254,215,173));" Below to Download CV</h1>
+   
+    <img src="sand resume.png" alt=" " style="width:40%; height: 90%; top: 9%;position: absolute; left: 30%;">
+    <br>
+  
+    <div class="dv" onclick="downloadCV()"><center>Download</center> </button></div>
+
+    <script>
+        function downloadCV() {
+            const link = document.createElement('a');
+            link.href = 'pradeep.pdf';  
+            link.download = 'pradeep.pdf';  
+            link.click();
+        }
+    </script>
+</body>
+</html>
